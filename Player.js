@@ -5,9 +5,13 @@ class Player {
 
   static betRequest(gameState, bet) {
     const threshold = Math.random() < 0.8;
-    const toBet = Math.floor(Math.random() * 500) + 1;
+    const toBet = Math.floor(Math.random() * 1000) + 1;
 
-    bet(1000);
+    if (threshold) {
+      bet(toBet);
+    } else {
+      bet(10);
+    }
   }
 
   static showdown(gameState) {}
