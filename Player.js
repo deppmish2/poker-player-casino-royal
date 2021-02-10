@@ -11,6 +11,8 @@ class Player {
 
     if (threshold) {
       bet(toBet);
+    } else {
+      bet(100);
     }
   }
 
