@@ -5,13 +5,9 @@
   "engines": {
     "node": "6.x"
   },
-  "scripts": {
-    "start": "nodemon server.js"
-  },
   "private": true,
   "dependencies": {
     "body-parser": "1.15.2",
-    "express": "4.x",
-    "nodemon": "^2.0.7"
+    "express": "4.x"
   }
 }
