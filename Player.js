@@ -5,7 +5,7 @@ class Player {
 
   static betRequest(gameState, bet) {
     const threshold = Math.random() < 0.8;
-    const toBet = Math.floor(Math.random() * 500) + 1;
+    const toBet = Math.floor(Math.random() * 250) + 1;
 
     if (threshold) {
       bet(toBet);
