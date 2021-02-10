@@ -4,7 +4,7 @@ class Player {
   }
 
   static betRequest(gameState, bet) {
-    const toBet = Math.floor(Math.random() * 20) + 1;
+    const toBet = Math.floor(Math.random() * 50) + 1;
     const toRaise = gameState.minimum_raise;
 
     if (toRaise <= 500) {
