@@ -10,7 +10,11 @@ class Player {
       gameState.players[in_action][bet] +
       gameState.minimum_raise;
 
-    bet(toBet + toRaise);
+    if (toRaise <= 500) {
+      bet(toBet + toRaise);
+    } else {
+      bet(0);
+    }
   }
 
   static showdown(gameState) {}
