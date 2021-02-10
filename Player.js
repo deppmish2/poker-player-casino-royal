@@ -9,11 +9,7 @@ class Player {
     const threshold = Math.random() < 0.8;
     const toBet = Math.floor(Math.random() * 500) + 1;
 
-    if (threshold) {
-      bet(toBet);
-    } else {
-      bet(100);
-    }
+    bet(toBet);
   }
 
   static showdown(gameState) {}
